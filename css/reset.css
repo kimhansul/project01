@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Notokr', sans-serif;
+    overflow-y: scroll;
+}
+#wrap{
+    width: 100%;
+    margin: auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.cf::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.clear{
+    clear: both;
+}
+.inner{
+    max-width: 1400px;
+    margin: auto;
+}
+select, input, textarea, button{
+    font-family: 'Notokr', sans-serif;
+    outline: none;
+}
+ul, dl, ol{
+    list-style: none;
+}
+.primary_color{
+    color: #437dea;
+}
+body{
+    color: #555;
+    letter-spacing: -0.025em;
+    overflow-x: hidden;
+}

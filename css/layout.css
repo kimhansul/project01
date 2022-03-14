@@ -1,0 +1,92 @@
+#wrap{
+    width: 100%;
+}
+.inner{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #b3b3b3;
+}
+
+/* ///헤더 탑/// */
+#header{
+    width: 100%;
+    min-width: 1400px;
+    background: #535353;
+}
+.headtop_left{
+    width: 400px;
+    height: 40px;
+    background: #e2e2e2;
+    margin-right: 200px;
+}
+.weather{
+    width: 200px;
+    height: 40px;
+    background: #e2e2e2;
+}
+.headtop_right{
+    width: 400px;
+    height: 40px;
+    background: #e2e2e2;
+}
+
+/* ///헤더 네비/// */
+.logo{
+    width: 350px;
+    height: 100px;
+    background: #eeeeee;
+}
+.main_menu{
+    width: 700px;
+    height: 100px;
+    background: #eeeeee;
+}
+
+/* ///메인/// */
+#main{
+    width: 100%;
+    min-width: 1400px;
+    background: #535353;
+}
+.checking{
+    width: 100%;
+    height: 1000px;
+}
+
+/* ///푸터/// */
+#footer{
+    width: 100%;
+    min-width: 1400px;
+    background: #535353;
+}
+.banner_box{
+    width: 800px;
+    height: 50px;
+    background: #e2e2e2;
+}
+.banner_btn{
+    width: 100px;
+    height: 50px;
+    background: #e2e2e2;
+}
+.footnav_box{
+    width: 400px;
+    height: 50px;
+    background: #eeeeee;
+}
+.footer_logo{
+    width: 200px;
+    height: 100px;
+    background: #e2e2e2;
+    margin-right: 10px;
+}
+.info_box{
+    width: 500px;
+    height: 100px;
+    background: #e2e2e2;
+}
+.validity{
+    width: 300px;
+    height: 100px;
+    background: #e2e2e2;
+}
