@@ -13,10 +13,10 @@
     margin-left:5px;
 }
 #top_wrap .top_list li:first-child{
-    background: url(image/right.png) no-repeat 47px 20px;
+    background: url(../image/right.png) no-repeat 47px 20px;
 }
 #top_wrap .top_list li:nth-child(2), #top_wrap .top_list li:nth-child(3){
-    background: url(image/right.png) no-repeat 62px 20px;
+    background: url(../image/right.png) no-repeat 62px 20px;
 }
 #top_wrap .top_list li a{
     font-size: 14px;
@@ -42,7 +42,7 @@
     width: 250px;
 }
 #sidebar_wrap .sidebar_title{
-    background: url(image/sidebar__title.png) no-repeat 95px -3px;
+    background: url(../image/sidebar__title.png) no-repeat 95px -3px;
     background-size: 20px;
     margin-bottom: 35px;
 }
@@ -51,7 +51,7 @@
     padding: 2px 16px 0px 5px;
 }
 #sidebar_wrap .sidebar .sidebar_head{
-    background: #ffffff url(image/down.png) no-repeat 222px 18px;
+    background: #ffffff url(../image/down.png) no-repeat 222px 18px;
     color: #444444;
     border: 1px solid #C5C9D6;
     border-radius: 4px;
@@ -82,7 +82,7 @@
     margin-top: 10px;
 }
 .sidebar_content .sidebar_menulist .outlink_style{
-    background: url(image/menu_sprite.png) no-repeat 176px -65px;
+    background: url(../image/menu_sprite.png) no-repeat 176px -65px;
 }
 .sidebar_content .sidebar_menulist li:last-child{
     margin-bottom: 10px;
@@ -101,7 +101,7 @@
 }
 #sidebar_wrap .sidebar input:checked ~ div.sidebar_head{
     color: #ffffff;
-    background: #437DEA url(image/up.png) no-repeat 222px 18px;
+    background: #437DEA url(../image/up.png) no-repeat 222px 18px;
     border: none;
     border-radius: 4px 4px 0px 0px;
 }
@@ -179,7 +179,7 @@
     width: 80%;
     padding: 36px 10px 45px 160px;
     color: #636363;
-    background: url(image/notice_box_icon1.png) no-repeat 33px 26px;
+    background: url(../image/notice_box_icon1.png) no-repeat 33px 26px;
 }
 #borad_wrap .borad_info .info_content .info_title{
     font-size: 19px;
@@ -225,7 +225,7 @@
     padding: 8px 45px 10px 25px;
     border: none;
     border-radius: 4px;
-    background: #437DEA url(image/search.png) no-repeat 62px 12px;
+    background: #437DEA url(../image/search.png) no-repeat 62px 12px;
     background-size: 15px;
     cursor: pointer;
 }
@@ -244,7 +244,7 @@
     line-height: 20px;
     margin: 10px auto;
     padding-left: 25px;
-    background: url(image/document.png) no-repeat;
+    background: url(../image/document.png) no-repeat;
     background-size: 20px;
 }
 #borad_wrap .board_pageinfo span{
@@ -373,16 +373,16 @@
     text-indent: -9999999999px;
 }
 .pager div.first_page{
-    background: url(image/first_page.png) no-repeat center center;
+    background: url(../image/first_page.png) no-repeat center center;
 }
 .pager div.prev{
-    background: url(image/prev.png) no-repeat center center;
+    background: url(../image/prev.png) no-repeat center center;
 }
 .pager div.next{
-    background: url(image/next.png) no-repeat -2px center;
+    background: url(../image/next.png) no-repeat -2px center;
 }
 .pager div.last_page{
-    background: url(image/last_page.png) no-repeat center center;
+    background: url(../image/last_page.png) no-repeat center center;
 }
 
 /* ///설문조사/// */
@@ -469,13 +469,13 @@
     margin-right: 20px;
 }
 .survey_wrap .survey_info .info_back1{
-    background: url(image/manager_sprite.png) no-repeat 8px 1px;
+    background: url(../image/manager_sprite.png) no-repeat 8px 1px;
 }
 .survey_wrap .survey_info .info_back2{
-    background: url(image/manager_sprite.png) no-repeat 8px -25px;
+    background: url(../image/manager_sprite.png) no-repeat 8px -25px;
 }
 .survey_wrap .survey_info .info_back3{
-    background: url(image/manager_sprite.png) no-repeat 8px -50px;
+    background: url(../image/manager_sprite.png) no-repeat 8px -50px;
 }
 .survey_wrap .survey_info .survey_info_content{
     margin-right: 25px;
