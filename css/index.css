@@ -746,29 +746,6 @@ h1{
 .content1 .main_notice_tab_wrap .main_notice_pagecount span.total_page{
     color: #969696;
 }
-.content1 .main_notice_tab_wrap .main_notice_pagecount button{
-    width: 28px;
-    height: 28px;
-    border: none;
-    background: #000;
-    font-size: 0;
-    cursor: pointer;
-    opacity: .6;
-    transition: opacity .3s;
-    position: absolute;
-    top: 10px;
-}
-.content1 .main_notice_tab_wrap .main_notice_pagecount button.main_notice_prev{
-    left: 0;
-    background: url(../image/board_sprite.png) no-repeat 8px -27px;
-}
-.content1 .main_notice_tab_wrap .main_notice_pagecount button.main_notice_next{
-    right: 0;
-    background: url(../image/board_sprite.png) no-repeat 10px -51px;
-}
-.content1 .main_notice_tab_wrap .main_notice_pagecount button:hover{
-    opacity: 1;
-}
 .content1 .main_notice_tab_wrap a.noticemore_btn{
     display: block;
     width: 28px;
@@ -789,8 +766,12 @@ h1{
     position: relative;
 }
 .content1 .main_notice_wrap .main_notice_contents .main_notice_content{
-    width: 900px;
+    width: 850px;
     position: absolute;
+}
+.content1 .main_notice_wrap .main_notice_contents .main_notice_box{
+    margin-right: 10px;
+    margin-bottom: 50px;
 }
 .content1 .main_notice_wrap .main_notice_content a{
     display: block;
@@ -801,8 +782,7 @@ h1{
     text-decoration: none;
     padding: 30px;
     border-radius: 15px;
-    margin-right: 10px;
-    box-shadow: 19px 38px 30px rgba(25, 53, 116, .12);
+    box-shadow: 12px 19px 14px rgba(25, 53, 116, .12);
     transition: all .3s;
     position: relative;
 }
@@ -845,16 +825,18 @@ h1{
     display: -webkit-box;
     overflow: hidden;
     -webkit-box-orient: vertical;
-    margin-bottom: 45px;
 }
 .content1 .main_notice_wrap .main_notice_content a span.notice_card_date{
     color: #636363;
     font-size: 14px;
     font-weight: 400;
+    position: absolute;
+    bottom: 30px;
+    left: 31px;
 }
 .content1 .main_notice_wrap .main_notice_content a:hover{
     border-color: #437dea;
-    box-shadow: 19px 38px 30px rgba(25, 53, 116, .24);
+    box-shadow: 12px 19px 14px rgba(25, 53, 116, .24);
 }
 .content1 .main_notice_wrap .main_notice_content a:hover span.notice_card_tag{
     color: #fff;
@@ -876,6 +858,39 @@ h1{
 .content1 .main_notice_wrap .main_notice_contents .main_notice_02{
     z-index: -1;
 } /* 앞에있으면 공지사항 안보이니까 임시 */
+
+/* 슬라이더 플러그인 버튼 */
+.slick-prev{
+    width: 28px;
+    height: 28px;
+    border: none;
+    font-size: 0;
+    background: url(../image/board_sprite.png) no-repeat 8px -27px;
+    cursor: pointer;
+    opacity: .6;
+    transition: opacity .3s;
+    position: absolute;
+    top: -45px;
+    right: 152px;
+    z-index: 10;
+}
+.slick-next{
+    width: 28px;
+    height: 28px;
+    border: none;
+    font-size: 0;
+    background: url(../image/board_sprite.png) no-repeat 10px -51px;
+    cursor: pointer;
+    opacity: .6;
+    transition: opacity .3s;
+    position: absolute;
+    top: -45px;
+    right: 77px;
+    z-index: 10;
+}
+.slick-prev:hover, .slick-next:hover{
+    opacity: 1;
+}
 
 /* 이미지 슬라이드 밑 버튼 3개 */
 .content1 .shortcut_btn{
