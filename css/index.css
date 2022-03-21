@@ -697,6 +697,9 @@ h1{
 .content1 .main_notice_tab_wrap{
     margin-bottom: 10px;
 }
+.content1 .main_notice_tab_wrap .main_notice_tab{
+    width: 670px;
+}
 .content1 .main_notice_tab_wrap .main_notice_tab a{
     color: #7a7d96;
     font-size: 18px;
@@ -708,9 +711,6 @@ h1{
     cursor: pointer;
     position: relative;
     transition: all .2s;
-}
-.content1 .main_notice_tab_wrap .main_notice_tab a:last-child{
-    margin-right: 45px;
 }
 .content1 .main_notice_tab_wrap .main_notice_tab a::after{
     content: '';
@@ -753,7 +753,7 @@ h1{
     background: #fff url(../image/board_sprite.png) no-repeat 8px -74px;
     border-radius: 50%;
     font-size: 0;
-    margin: 10px 17px 0px 12px;
+    margin: 10px 0px 0px 5px;
     transition: all .2s;
 }
 .content1 .main_notice_tab_wrap a.noticemore_btn:hover{
@@ -767,6 +767,7 @@ h1{
 }
 .content1 .main_notice_wrap .main_notice_contents .main_notice_content{
     width: 850px;
+    height: 345px;
     position: absolute;
 }
 .content1 .main_notice_wrap .main_notice_contents .main_notice_box{
@@ -855,11 +856,11 @@ h1{
     top: 30px;
     right: 30px;
 }
-.content1 .main_notice_wrap .main_notice_contents .main_notice_02{
-    z-index: -1;
-} /* 앞에있으면 공지사항 안보이니까 임시 */
+#main_notice_02, #main_notice_03, #main_notice_04, #main_notice_05, #main_notice_06{
+    display: none;
+}
 
-/* 슬라이더 플러그인 버튼 */
+/* 슬라이더 플러그인 관련 */
 .slick-prev{
     width: 28px;
     height: 28px;
@@ -871,7 +872,7 @@ h1{
     transition: opacity .3s;
     position: absolute;
     top: -45px;
-    right: 152px;
+    right: 145px;
     z-index: 10;
 }
 .slick-next{
@@ -1581,7 +1582,7 @@ h1{
     display: block;
     width: 36px;
     height: 36px;
-    border-radius: 50%;
+    border-radius: 18px;
     font-size: 0;
     background: transparent;
     border: none;
@@ -1600,6 +1601,17 @@ h1{
 }
 .content4 .sns_btn_wrap ul li.sns_youtube button{
     background: #d91e1e url(../image/sns_sprite.png) no-repeat 0px -167px;
+}
+.content4 .sns_btn_wrap ul li button.snsbtn_active{
+    width: auto;
+    padding: 0 30px 0 18px;
+    color: #fff;
+    font-size: 14px;
+    background-position-x: 51px;
+    box-shadow: 0 0 10px 0 rgba(13, 36, 78, .25);
+}
+.content4 .sns_btn_wrap ul li.sns_facebook button.snsbtn_active{
+    background-position-x: 63px;
 }
 .content4 .sns_btn_wrap ul li.sns_instar a{
     background: url(../image/sns_bg.png) no-repeat top /100% 100%;
@@ -1625,7 +1637,8 @@ h1{
 }
 
 /* 메인4 sns 소통하남 내용 */
-.content4 .sns_hanam{
+.content4{
+    height: 496px;
     margin-bottom: 80px;
 }
 .content4 .sns_hanam .sns_hanam_contant{
@@ -1719,6 +1732,10 @@ h1{
 .content4 .sns_hanam .sns_hanam_contant .sns_hanam_contant_date{
     color: #636363;
     font-size: 14px;
+}
+.content4 .sns_hanam>div{
+    position: absolute;
+    display: none;
 }
 
 /* 푸터 배너모음 */

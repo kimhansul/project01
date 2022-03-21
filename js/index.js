@@ -1,3 +1,20 @@
+const tabBtn=document.querySelectorAll('.sns_btn_wrap button');
+const tabContent=document.querySelectorAll('.sns_hanam>div');
+for(i=0;i<tabBtn.length;i++){
+  tabBtn[i].addEventListener('click',function(e){
+    let tabTarget='.'+e.target.getAttribute('value');
+    tabContent.forEach((i)=>{
+      i.style.display='none';
+      document.querySelector(tabTarget).style.display='block'
+    });
+    tabBtn.forEach((i)=>{
+      i.classList.remove('snsbtn_active');
+      e.target.classList.add('snsbtn_active');
+    });
+  });
+  document.querySelector('.sns_hanam_contant_main').style.display='block';
+}
+
 const bt=document.querySelector('#top_btn');
 
 window.addEventListener('scroll',()=>{
