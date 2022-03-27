@@ -214,6 +214,7 @@
 
 h1{
     padding: 14px 0 15px 0;
+    transition: all .3s;
 }
 
 /* //메인메뉴 */
@@ -223,6 +224,7 @@ h1{
     border-bottom: 1px solid #e5e7ee;
     position: relative;
     z-index: 80;
+    transition: all .3s;
 }
 .menu_width{
     max-width: 1400px;
@@ -248,6 +250,7 @@ h1{
 }
 .main_menu>li{
     padding: 38px 0px;
+    transition: all .3s;
 }
 .main_menu li a{
     text-decoration: none;
@@ -256,6 +259,7 @@ h1{
     font-weight: 500;
     padding: 0 30px;
     position: relative;
+    transition: all .3s;
 }
 .main_menu li>a::after{
     content: '';
@@ -537,6 +541,35 @@ h1{
     left: 14px;
 }
 
+/* fixed */
+.header_nav.fixed{
+    position: fixed;
+    top: 0;
+}
+.header_nav.fixed h1{
+    padding: 12px 0 13px;
+}
+.header_nav.fixed .logo a img{
+    height: 50px;
+    vertical-align: middle;
+}
+.header_nav.fixed .main_menu>li{
+    padding: 26px 0px;
+}
+.header_nav.fixed .main_menu>li>a{
+    font-size: 18px;
+}
+.header_nav.fixed .main_menu>li.main_menu_sitemap>a{
+    font-size: 0;
+    height: 26px;
+}
+.header_nav.fixed .main_menu>li.main_menu_search{
+    padding: 18px 0 0 0;
+}
+.header_nav.fixed .width_100{
+    top: 79px;
+}
+
 /* 메인1 백그라운드 */
 #main .content1{
     width: 100%;
@@ -589,19 +622,28 @@ h1{
 
 /* 메인1 이미지슬라이드 */
 .content1 .img_slide_wrap .img_slide{
-    position: relative;
     margin-bottom: 30px;
+    position: relative;
 }
 .content1 .img_slide_wrap .img_slide .img_slide_frame{
     width: 500px;
     height: 400px;
     border-radius: 40px;
     overflow: hidden;
-    position: relative;
 }
 .content1 .img_slide_wrap .img_slide ul{
-    width: auto;
-    height: 400px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.content1 .img_slide_wrap .img_slide ul li{
+    position: absolute;
+    display: block;
+}
+.content1 .img_slide_wrap .img_slide ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .content1 .img_slide_wrap .img_slide button{
     width: 40px;
@@ -1129,6 +1171,9 @@ h1{
     position: relative;
     z-index: 2;
 }
+.content1 .bookmark_wrap .bookmark_open.active{
+    height: 335px;
+}
 .content1 .bookmark_wrap .bookmark_open .bookmark_content{
     width: 144px;
     position: relative;
@@ -1186,6 +1231,9 @@ h1{
     z-index: 2;
     transition: background-color .3s;
 }
+.content1 .bookmark_wrap button span.boockmarkbtn_close{
+    display: none;
+}
 .content1 .bookmark_wrap button::before{
     content: '';
     width: 20px;
@@ -1196,9 +1244,22 @@ h1{
     top: 30px;
     left: 0;
     right: 0;
+    transition: all .3s;
 }
 .content1 .bookmark_wrap button:hover{
     background: #009290;
+}
+.content1 .bookmark_wrap button.active{
+    background: #363c5a;
+}
+.content1 .bookmark_wrap button.active::before{
+    background-position-y: -30px;
+}
+.content1 .bookmark_wrap button.active span.boockmarkbtn_entire{
+    display: none;
+}
+.content1 .bookmark_wrap button.active span.boockmarkbtn_close{
+    display: block;
 }
 
 /* 메인2 사진으로 전하남 타이틀 */
@@ -1764,8 +1825,14 @@ h1{
 
 /* 배너박스 */
 #footer .footer_banner .banner_box{
+    width: 85%;
     height: 69px;
     overflow: hidden;
+    position: relative;
+}
+#footer .footer_banner .banner_box>div{
+    width: 100%;
+    position: absolute;
 }
 #footer .footer_banner .banner_box .banner_content{
     padding: 22px 18px;
@@ -1828,6 +1895,9 @@ h1{
 }
 #footer .banner_btn button.banner_btn_stop{
     background: url(../image/banner_sprite.png) no-repeat 5px -69px;
+}
+#footer .banner_btn button.banner_btn_stop.active{
+    background: url(../image/banner_sprite.png) no-repeat 5px -90px;
 }
 #footer .banner_btn button.banner_btn_down{
     background: url(../image/banner_sprite.png) no-repeat 2px -49px;
