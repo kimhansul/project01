@@ -591,13 +591,17 @@ h1{
     font-weight: 500;
     cursor: pointer;
     overflow: hidden;
+    transition: background-color .3s, color .3s;
     position: relative;
 }
 .content1 .img_slide_wrap .slide_category button.category_promotion{
     left: -60px;
 }
+.content1 .img_slide_wrap .slide_category button.category_info span{
+    padding: 0 30px 0 0;
+}
 .content1 .img_slide_wrap .slide_category button.category_promotion span{
-    padding-left: 40px;
+    padding: 0 0 0 30px;
 }
 .content1 .img_slide_wrap .slide_category button.categorybtn_active{
     z-index: 1;
@@ -607,7 +611,7 @@ h1{
     border: none;
 }
 .content1 .img_slide_wrap .slide_category button.categorybtn_active span{
-    padding-right: 30px;
+    padding: 0 30px 0 0;
 }
 .content1 .img_slide_wrap .slide_category button.categorybtn_active::before{
     content: '';
@@ -618,6 +622,9 @@ h1{
     position: absolute;
     top: 12px;
     left: 20px;
+}
+.content1 .img_slide_wrap .slide_category button.category_promotion.categorybtn_active::before{
+    background-position: 0 -30px;
 }
 
 /* 메인1 이미지슬라이드 */
@@ -667,6 +674,38 @@ h1{
 .content1 .img_slide_wrap .img_slide button.img_slide_next{
     background: url(../image/visual_sprite.png) no-repeat 7px -146px;
     right: -47px;
+}
+.content1 .img_slide_wrap .img_slide button.infoimg_slide_play_stop, .content1 .img_slide_wrap .img_slide button.promoimg_slide_play_stop{
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    background: url(../image/visual_sprite.png) no-repeat 0px -60px;
+    top: -60px;
+    left: 120px;
+    z-index: 2;
+}
+.content1 .img_slide_wrap .img_slide button.promoimg_slide_play_stop{
+    left: 215px;
+    display: none;
+}
+.content1 .img_slide_wrap .img_slide button.active{
+    background-position: 0px -90px;
+}
+.content1 .img_slide_wrap .img_slide>span{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+    position: absolute;
+    top: -60px;
+    left: 90px;
+    z-index: 2;
+    display: none;
+}
+.content1 .img_slide_wrap .img_slide span.infoimg_slide_page{
+    display: block;
+}
+.content1 .img_slide_wrap .img_slide span.promoimg_slide_page{
+    left: 180px;
 }
 
 /* 이미지슬라이드 밑 코로나 간단현황 */
@@ -738,6 +777,7 @@ h1{
 /* 공지사항 카드 위 탭+버튼 */
 .content1 .main_notice_tab_wrap{
     margin-bottom: 10px;
+    position: relative;
 }
 .content1 .main_notice_tab_wrap .main_notice_tab{
     width: 670px;
@@ -782,10 +822,17 @@ h1{
     padding: 0 40px;
     position: relative;
 }
-.content1 .main_notice_tab_wrap .main_notice_pagecount span.present_page{
+.content1 .main_notice_tab_wrap .main_notice_pagecount .pagecount_wrap{
+    position: absolute;
+    display: none;
+}
+.content1 .main_notice_tab_wrap .main_notice_pagecount .pagecount_wrap.active{
+    display: block;
+}
+.content1 .main_notice_tab_wrap .main_notice_pagecount span span.present_page{
     color: #000000;
 }
-.content1 .main_notice_tab_wrap .main_notice_pagecount span.total_page{
+.content1 .main_notice_tab_wrap .main_notice_pagecount span span.total_page{
     color: #969696;
 }
 .content1 .main_notice_tab_wrap a.noticemore_btn{
@@ -795,7 +842,7 @@ h1{
     background: #fff url(../image/board_sprite.png) no-repeat 8px -74px;
     border-radius: 50%;
     font-size: 0;
-    margin: 10px 0px 0px 5px;
+    margin: 10px 0px 0px 28px;
     transition: all .2s;
 }
 .content1 .main_notice_tab_wrap a.noticemore_btn:hover{
@@ -898,7 +945,7 @@ h1{
     top: 30px;
     right: 30px;
 }
-#main_notice_02, #main_notice_03, #main_notice_04, #main_notice_05, #main_notice_06{
+#main_notice_01, #main_notice_02, #main_notice_03, #main_notice_04, #main_notice_05, #main_notice_06{
     display: none;
 }
 
