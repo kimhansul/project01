@@ -44,3 +44,6 @@ body{
     letter-spacing: -0.025em;
     overflow-x: hidden;
 }
+a{
+    text-decoration: none;
+}
