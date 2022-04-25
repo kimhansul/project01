@@ -1,31 +1,31 @@
 @font-face {
     font-family: 'Notokr';
-    src: url(font/NotoSansKR-Thin.otf) format('opentype');
+    src: url(../font/NotoSansKR-Thin.otf) format('opentype');
     font-weight: 100;
 }
 @font-face {
     font-family: 'Notokr';
-    src: url(font/NotoSansKR-Light.otf) format('opentype');
+    src: url(../font/NotoSansKR-Light.otf) format('opentype');
     font-weight: 300;
 }
 @font-face {
     font-family: 'Notokr';
-    src: url(font/NotoSansKR-Regular.otf) format('opentype');
+    src: url(../font/NotoSansKR-Regular.otf) format('opentype');
     font-weight: 400;
 }
 @font-face {
     font-family: 'Notokr';
-    src: url(font/NotoSansKR-Medium.otf) format('opentype');
+    src: url(../font/NotoSansKR-Medium.otf) format('opentype');
     font-weight: 500;
 }
 @font-face {
     font-family: 'Notokr';
-    src: url(font/NotoSansKR-Bold.otf) format('opentype');
+    src: url(../font/NotoSansKR-Bold.otf) format('opentype');
     font-weight: 700;
 }
 @font-face {
     font-family: 'Notokr';
-    src: url(font/NotoSansKR-Black.otf) format('opentype');
+    src: url(../font/NotoSansKR-Black.otf) format('opentype');
     font-weight: 900;
 }
 .Notokr{
@@ -34,7 +34,7 @@
 
 @font-face {
     font-family: 'DWImpactamin';
-    src: url(font/DWImpactamin.ttf) format('truetype');
+    src: url(../font/DWImpactamin.ttf) format('truetype');
 }
 .DWImpactamin{
     font-family: 'DWImpactamin', sans-serif;

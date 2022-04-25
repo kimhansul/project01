@@ -28,7 +28,7 @@ for(i=0;i<noticeTabBtn.length;i++){
   document.querySelector('#main_notice_01').style.display='block';
 }
 
-$('.main_notice_content').slick({
+$('.main_notice_contents>div').slick({
     autoplay: false,
     arrows: false,
     dots: false,
