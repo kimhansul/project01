@@ -115,9 +115,10 @@
     position: relative;
 }
 .img_slide_wrap .img_slide .img_slide_frame{
-    width: 350px;
+    width: 330px;
     height: 256px;
     margin: 0 auto;
+    position: relative;
 }
 .img_slide_wrap .img_slide ul{
     width: 100%;
@@ -126,18 +127,21 @@
 }
 .img_slide_wrap .img_slide .img_slide_frame ul li{
     position: absolute;
-    display: block;
+    width: 100%;
+    height: 100%;
     padding: 0 5px;
 }
 .img_slide_wrap .img_slide ul li a{
     display: block;
+    width: 100%;
+    height: 100%;
 }
 .img_slide_wrap .img_slide ul li a img{
     max-width: 100%;
-    width: 350px;
-    max-height: 100%;
-    border-radius: 40px;
-    overflow: hidden;
+    border-radius: 20px;
+}
+.img_slide_wrap .img_slide ul.promotion_img_slide{
+    display: none;
 }
 .img_slide_prev, .img_slide_next{
     display: none;
@@ -151,6 +155,9 @@
     left: 136px;
     z-index: 2;
 }
+.promoimg_slide_page{
+    display: none;
+}
 .infoimg_slide_play_stop, .promoimg_slide_play_stop{
     width: 20px;
     height: 20px;
@@ -161,6 +168,12 @@
     top: -38px;
     left: 166px;
     z-index: 2;
+}
+.promoimg_slide_play_stop{
+    display: none;
+}
+.img_slide button.active{
+    background-position: 0px -90px;
 }
 .covid_present{
     font-size: 13px;
