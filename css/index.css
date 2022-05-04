@@ -632,6 +632,7 @@ h1{
 .content1 .img_slide_wrap .img_slide{
     margin-bottom: 30px;
     position: relative;
+    z-index: 10;
 }
 .content1 .img_slide_wrap .img_slide .img_slide_frame{
     width: 500px;
@@ -863,6 +864,8 @@ h1{
 .content1 .main_notice_wrap .main_notice_contents .main_notice_box{
     margin-right: 10px;
     margin-bottom: 50px;
+    opacity: 0;
+    transition: opacity .4s;
 }
 .content1 .main_notice_wrap .main_notice_content a{
     display: block;
@@ -951,6 +954,12 @@ h1{
 }
 
 /* 슬라이더 플러그인 관련 */
+.slick-list{
+    overflow: visible;
+}
+.content1 .main_notice_wrap .main_notice_contents .main_notice_box.slick-active{
+    opacity: 1;
+}
 .slick-prev{
     width: 28px;
     height: 28px;
@@ -1158,7 +1167,6 @@ h1{
     line-height: 33px;
     overflow: hidden;
     transition: all .3s;
-    overflow: hidden;
     position: relative;
 }
 .content1 .mayor_wrap ul li a::before{
